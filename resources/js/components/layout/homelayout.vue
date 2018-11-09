@@ -3,14 +3,19 @@
        <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                     Draft The King Corp
+                    <a role="button" class="navbar-burger " :class="{'is-active': burger}" aria-label="menu" aria-expanded="false" @click="activeBurger()">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    </a>
             </div>
-
-            <div id="navbarBasicExample" class="navbar-menu">
+            
+            <div id="navbarBasicExample" class="navbar-menu " :class="{'is-active': burger}" >
                 <div class="navbar-start">
-                <router-link :to="{name:'LandingHome'}" class="navbar-item">
+                <router-link :to="{name:'LandingHome'}"  class="navbar-item" :class="{'is-black': burger}">
                     Home
                 </router-link>
-                <router-link :to="{name: 'PostHome'}" class="navbar-item">
+                <router-link :to="{name: 'PostHome'}"  class="navbar-item" :class="{'is-black': burger}">
                     Post
                 </router-link>
                 </div>
@@ -38,7 +43,17 @@
     export default {
         data(){
             return{
-                year: 2018
+                year: 2018,
+                burger: false,
+            }
+        },
+        methods:{
+            activeBurger(){
+                if(this.burger == false){
+                    this.burger = true;
+                }else{
+                    this.burger = false;
+                }
             }
         }
        

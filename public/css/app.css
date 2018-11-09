@@ -20509,3 +20509,7 @@ label.panel-block:hover {
   cursor: default;
 }
 
+.is-black {
+  color: black !important;
+}
+

@@ -35,6 +35,7 @@ export default {
     created(){
         this.getData();
     },
+    
     methods:{
         getData(){
              let uri="/api/draft";
