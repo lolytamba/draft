@@ -1,0 +1,36 @@
+.navbar{
+    position: fixed;
+left: 0;
+right: 0;
+top: 0;
+background-image: linear-gradient(to right,#a293e0,#0057ef);
+
+    a{
+        color: white;
+    }
+    a:hover{
+        color: black;
+    }
+}
+
+#appPage{
+    margin-top: 95px;
+    margin-bottom: 40px;
+}
+
+.footer{
+    height: 82px;
+padding: 0px;
+background-image: linear-gradient(to right,#776e6e,#f2f2f2);
+color: white
+}
+
+.navbar-brand{
+    align-items: center;
+color: white;
+font-size: 20px;
+font-weight: bold;
+margin-left: 20px;
+margin-right: 20px;
+cursor: default;
+}
