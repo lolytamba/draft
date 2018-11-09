@@ -13,7 +13,7 @@ class DraftController extends Controller
      */
     public function index()
     {
-        $draft = Draft::all();
+        $draft = Draft::orderBy('created_at', 'desc')->get();
         return $draft;
     }
 
